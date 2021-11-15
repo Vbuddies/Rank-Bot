@@ -645,7 +645,11 @@ async def removerole_error(ctx, error):
 
 
 #this runs the bot....but I have less control over the loop
-client.run("NTg4NzYzMTIxNTAyNTE5MzM0.Xh0PVQ._ZCduH7nHw6ZZvE6_qIWpJAY-Zk")
+#replace with getting it from a file
+infile = open("token.txt", "r")
+client.run(infile.readLine())
+#Old Code
+#client.run("NTg4NzYzMTIxNTAyNTE5MzM0.Xh0PVQ._ZCduH7nHw6ZZvE6_qIWpJAY-Zk")
 
 
 #print to the file and save all the xp information
